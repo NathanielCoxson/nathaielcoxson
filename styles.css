@@ -17,8 +17,9 @@ p {
 
 .section-container {
     display: inline-flex;
-    width: 100%;
     padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Nav bar */
@@ -63,6 +64,7 @@ nav li a:hover{
 #about-me-section {
     top: 10px;
 }
+
 #profile-picture {
     width: 200px;
     height: 200px;
