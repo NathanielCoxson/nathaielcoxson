@@ -11,6 +11,10 @@ p {
     font-family: 'Roboto Mono', sans-serif;
 }
 
+#about-me-section {
+    padding-top: 120px;
+}
+
 .section-container {
     display: inline-flex;
     width: 100%;
@@ -21,12 +25,15 @@ p {
 nav {
     box-sizing: border-box;
     width: 100%;
-    padding: 10px;
+    padding: 0 10px;
     display: inline-flex;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
     border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    background-color: white;
 }
 
 nav h1 {
@@ -53,6 +60,9 @@ nav li a:hover{
 }
 
 /* About Me */
+#about-me-section {
+    top: 10px;
+}
 #profile-picture {
     width: 200px;
     height: 200px;
