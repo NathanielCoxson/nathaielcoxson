@@ -3,6 +3,14 @@ body {
     margin: 0px;
 }
 
+h1, h2, h3 {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Mono', sans-serif;
+}
+
 .section-container {
     display: inline-flex;
     width: 100%;
@@ -27,6 +35,21 @@ nav h1 {
 
 nav li {
     display: inline;
+    font-family: 'Roboto Mono', sans-serif;
+    padding: 10px;
+    font-style: italic;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+nav li a:hover{
+    cursor: pointer;
+    background-color: aliceblue;
 }
 
 /* About Me */
@@ -64,6 +87,22 @@ nav li {
 }
 
 /* Contact */
+
+
+#contact-section ul {
+    list-style-type: none;
+}
+
 #contact-section li {
+    padding: 10px;
     display: inline;
+}
+
+#contact-section a {
+    text-decoration: none;
+}
+
+#contact-section .icon {
+    width: 25px;
+    height: 25px;
 }
