@@ -16,8 +16,13 @@ nav {
     padding: 10px;
     display: inline-flex;
     justify-content: space-between;
+    justify-items: center;
     align-items: center;
     border-bottom: 1px solid black;
+}
+
+nav h1 {
+    font-size: 32px;
 }
 
 nav li {
@@ -38,4 +43,27 @@ nav li {
 #clemson-logo {
     height: 200px;
     width: 200px;
+}
+
+/* Skills */
+.icon-container {
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.skills-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Contact */
+#contact-section li {
+    display: inline;
 }
