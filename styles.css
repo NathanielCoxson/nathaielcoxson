@@ -3,6 +3,11 @@ body {
     margin: 0px;
 }
 
+.section-container {
+    display: inline-flex;
+    width: 100%;
+    padding: 40px;
+}
 
 /* Nav bar */
 nav {
@@ -17,4 +22,20 @@ nav {
 
 nav li {
     display: inline;
+}
+
+/* About Me */
+#profile-picture {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.about-content {
+    padding-left: 20px;
+}
+
+#clemson-logo {
+    height: 200px;
+    width: 200px;
 }
