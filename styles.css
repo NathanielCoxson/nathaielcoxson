@@ -149,8 +149,6 @@ nav button {
 }
 
 /* Contact */
-
-
 #contact-section ul {
     list-style-type: none;
 }
@@ -162,9 +160,4 @@ nav button {
 
 #contact-section a {
     text-decoration: none;
-}
-
-#contact-section .icon {
-    width: 25px;
-    height: 25px;
 }
