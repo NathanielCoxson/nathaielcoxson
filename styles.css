@@ -48,21 +48,39 @@ nav li {
     font-style: italic;
 }
 
-nav li a {
+.light-button {
+    background-color: white;
     color: black;
     text-decoration: none;
     border: 1px solid black;
     padding: 10px;
 }
 
-nav li a:hover{
+.light-button:hover{
     cursor: pointer;
-    background-color: aliceblue;
+    background-color: black;
+    color: white;
+}
+
+.dark-button {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.dark-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 nav button {
     font-family: 'Roboto Mono';
     font-size: 16px;
+    font-style: italic;
     padding: 5px;
 }
 
