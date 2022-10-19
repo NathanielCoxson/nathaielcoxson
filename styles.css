@@ -60,6 +60,38 @@ nav li a:hover{
     background-color: aliceblue;
 }
 
+nav button {
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    padding: 5px;
+}
+
+#dark-mode-button {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#dark-mode-button:hover {
+    background-color: black;
+    color: white;
+}
+
+#light-mode-button {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#light-mode-button:hover {
+    color: black;
+    background-color: white;
+}
+
+.nav-button {
+    padding: 0px;
+}
+
 /* About Me */
 #about-me-section {
     top: 10px;
