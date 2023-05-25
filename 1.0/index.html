@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./images/school_logo.png">
+        <title>Nathan Coxson</title>
+    </head>
+
+    <body>
+        <nav id="nav">
+            <h1>Nathan Coxson</h1>
+            <ul>
+                <li><a href="#about-me-section" class="light-button">About me</a></li>
+                <li><a href="#skills-section" class="light-button">Skills</a></li>
+                <li><a href="#projects-section" class="light-button">Personal Projects</a></li>
+                <li><a href="#about-me-section" class="dark-button">About me</a></li>
+                <li><a href="#skills-section" class="dark-button">Skills</a></li>
+                <li><a href="#projects-section" class="dark-button">Personal Projects</a></li>
+                <!--<li class="nav-button"><button id="dark-mode-button">Dark Mode</button></li>
+                <li class="nav-button"><button id="light-mode-button">Light Mode</button></li>-->
+            </ul>
+        </nav>
+        <div id="about-me-section" class="section-container">
+            <img id="clemson-logo" src="./images/school_logo.png">
+            <div style="display:block; width:100%">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p>I'm a beginner Software Engineer and a junior CS student at Clemson University in South Carolina.<br>
+                        In this portfolio you can find important information about me including my background, skills, and contact information.<br>
+                        Below you will also find a list of personal projects of mine, each with a description of the project and a list of the<br>
+                        tools that I gained experience with while working on them.
+                    </p>
+                </div>
+                <div id="contact-section">
+                    <ul>
+                        <li>
+                            <a href="mailto: nathancoxson2739@gmail.com">
+                                <img class="icon" src="./images/icons8-gmail-logo-50.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nathaniel-coxson-0016a8201/" target="_blank">
+                                <img class="icon" src="./images/icons8-linkedin-circled-50.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/NathanielCoxson" target="_blank">
+                                <img class="icon" src="./images/icons8-github-50.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div id="skills-container" class="section-container">
+            <h2 style="margin:0">Skills</h2>
+            <div class="skills-content">
+                <div class="skills-panel">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>C/C++</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="skills-panel">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Redux</li>
+                        <li>Node.js</li>
+                        <li>Git/GitHub</li>
+                    </ul>
+                </div>
+                <div class="skills-panel">
+                    <h3>OS</h3>
+                    <ul>
+                        <li>Windows</li>
+                        <li>MacOS</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="projects-section" class="section-container">
+            <h2>Personal Projects</h2>
+            <div class="project-panel">
+                <h3>Music Analysis Web App</h3>
+                <div class="project-content">
+                    <img src="./images/music-analysis-img.PNG">
+                    <div>
+                        <p>Web app built using React which utilizes the Spotify API. It allows you to select<br>
+                            a playlist from those you have created on your Spotify account and will then<br>
+                            use the API to analyze the songs within. Currently, the information provided is<br>
+                            a list of genres related to the artists of the songs in the playlist along with<br>
+                            the relative frequency of each genre, providing you with insight into your listening habits.<br>
+                        </p>
+                        <a href="https://musicanalyzer.netlify.app/" target="_blank">Try It</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-panel">
+                <h3>Task Tracking Web App</h3>
+                <div class="project-content">
+                    <img src="./images/task_tracker.PNG">
+                    <div>
+                        <p>Web application developed with React JS, HTML, and CSS. I developed this application<br>
+                            with the intention of tracking and organizing tasks for course and/or personal projects.<br>
+                            It was designed to be flexible by providing UI that can be altered to fit the needs of each user.<br>
+                            While still a work in progress, the app has several functions that I found useful for my own workflow,<br>
+                            including the option to have a variable number of task lists and entire different task boards. The task<br>
+                            cards are also dragable elements so that users can drag and drop them into different lists or even<br>
+                            reorder them if they like. This project was my first use of local storage to keep track of persistent<br>
+                            user data as it is important that a user's information remain even after reloading the site.<br>
+                            My intention is to continue to add to this project to improve the user experience by polishing<br>
+                            the interface to make it more appealing and also be compatible with mobile browsers.<br>
+                        </p>
+                        <a href="https://task-boards.netlify.app/" target="_blank">Try It</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
