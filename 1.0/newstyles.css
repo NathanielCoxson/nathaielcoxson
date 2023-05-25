@@ -1,0 +1,135 @@
+html {
+    background: linear-gradient(to bottom, #2E164B, #151218);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+    box-sizing: border-box;
+}
+
+/* * {
+    outline: 1px dashed red;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, li {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    margin: 0px;
+
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 45px;
+
+    color: white;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+
+    color: white;
+}
+
+h3 {
+    font-weight: 600;
+    
+    color: white;
+    opacity: 60%;
+}
+
+#MainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    gap: 44px;
+
+    margin-top: 60px;
+}
+
+#Header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#Header img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#HeaderText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+#HeaderText h2 {
+    opacity: 60%;
+    font-weight: bold;
+}
+
+#About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+
+#Skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+#SkillsContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 80px;
+}
+
+.skillsList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.skillsList ul {
+    color: white;
+    opacity: 60%;
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+}
