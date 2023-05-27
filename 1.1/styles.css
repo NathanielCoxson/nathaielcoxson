@@ -554,6 +554,11 @@ nav a {
     background: #353979;
     border-radius: 30px;
     gap: 1em;
+    transition: all 0.2s linear;
+}
+
+.project-card:hover {
+    box-shadow: 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .project-image1 {
@@ -574,7 +579,7 @@ nav a {
     overflow: hidden;
 }
 
-.project-card h2, h3 {
+.project-card h2, h3, a {
     font-weight: bold;
     font-family: 'Inter', sans-serif;
     color: white;
@@ -588,7 +593,7 @@ nav a {
     font-size: 30px;
 }
 
-.project-card h3 {
+.project-card h3, a {
     font-family: 'Inter', sans-serif;
     color: white;
     opacity: 0.8;
@@ -622,8 +627,9 @@ nav a {
     transition: all 0.2s linear;
 }
 
-.button h3 {
+.button a {
     color: #151218;
+    text-decoration: none;
 }
 
 .project-card .button:hover {

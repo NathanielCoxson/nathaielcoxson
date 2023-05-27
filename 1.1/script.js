@@ -68,3 +68,32 @@ for(let i = 0; i < div.childNodes.length; i++) {
 
 div.addEventListener('mousemove', grow);
 content_div.addEventListener('mouseout', shrink);
+
+//Project Cards Event Handling
+
+// Hides or shows the description and button depending on whether or not it is currently shown.
+function project_card_click(card) {
+    let description = card.querySelector('.project-description');
+    let button = card.querySelector('.button');
+
+    // Hide or show based on current state
+    description.style.display === 'none' ? description.style.display = 'block' : description.style.display = 'none';
+    button.style.display === 'none' ? button.style.display = 'flex' : button.style.display = 'none';
+}
+
+// Default display is to hide description and buttons
+let project_cards = document.getElementsByClassName('project-card');
+for(let i = 0; i < project_cards.length; i++) {
+    let description = project_cards[i].querySelector('.project-description');
+    let button = project_cards[i].querySelector('.button');
+    description.style.display = 'none';
+    button.style.display = 'none';
+}
+
+//Add click event listener and check for clicks on project-card divs.
+document.addEventListener('click', event => {
+    //project-card div click
+    if (event.target.closest('.project-card')) {
+        project_card_click(event.target.closest('.project-card'));
+    }
+});

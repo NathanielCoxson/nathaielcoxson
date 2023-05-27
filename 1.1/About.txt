@@ -1,0 +1,18 @@
+Hi, I'm Nate, a full-stack engineer with six years of prior coding experience. 
+I'm passionate about building scalable and efficient software solutions that 
+solve complex problems and deliver great user experiences. I am currently studying Computer 
+Science at Clemson University and am expected to graduate at the end of 2023. On this website 
+you will find a brief description of some of my most recent web projects as well as an overview 
+of my skills and background.
+
+ Hi, I'm [Your Name], a full-stack engineer with [Number] years
+                                of experience developing web applications. I'm passionate about building scalable and
+                                efficient
+                                software solutions that solve complex problems and deliver great user experiences.
+                                I specialize in using [Programming Languages/Frameworks], but I'm always eager to learn
+                                new
+                                technologies and tools that can improve my workflow and help me build better software.
+                                My
+                                expertise includes [Skills/Tools], and I'm comfortable working with both front-end and
+                                back-end
+                                technologies.
