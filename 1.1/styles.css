@@ -139,8 +139,9 @@ footer {
 }
 
 #Carousel {
+    /* Uncomment to enable CSS scroll snap */
+    /* scroll-snap-type: y mandatory; */
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -937,55 +938,3 @@ nav a {
 /* 
 linear-gradient(180deg, #2E164B 0%, #151218 100%)
 linear-gradient(-45deg, #60E1E0, #6369D1)*/
-
-
-
-/* .gradient {
-    background: linear-gradient(to right, orange, purple);
-} */
-
-.text-clip {
-    font-size: 100px;
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(to right, orange, purple);
-    background-clip: text;
-    color: transparent;
-    width: 600px;
-}
-
-.box {
-    position: absolute;
-    right: 0;
-    top: -200px;
-    transform: rotate(180deg);
-    width: 80vb;
-    height: 80vb;
-    background: linear-gradient(135deg, #60E1E0, #6369D1);
-    clip-path: polygon(68% 17%, 13% 14%, 61% 56%, 0 33%);
-}
-
-.gradient-wrapper {
-    filter: blur(100px);
-}
-
-.carousel {
-    width: 50%;
-    height: 500px;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    scroll-snap-type: y mandatory;
-}
-
-.child {
-    width: 100%;
-    min-height: 500px;
-    scroll-snap-align: start;
-}
-
-.child:nth-of-type(1) {
-    background: red;
-}
-.child:nth-of-type(2) {
-    background: green;
-}
