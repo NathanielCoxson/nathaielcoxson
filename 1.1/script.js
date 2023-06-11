@@ -81,19 +81,31 @@ function project_card_click(card) {
     button.style.display === 'none' ? button.style.display = 'flex' : button.style.display = 'none';
 }
 
-// Default display is to hide description and buttons
-let project_cards = document.getElementsByClassName('project-card');
-for(let i = 0; i < project_cards.length; i++) {
-    let description = project_cards[i].querySelector('.project-description');
-    let button = project_cards[i].querySelector('.button');
-    description.style.display = 'none';
-    button.style.display = 'none';
-}
-
-//Add click event listener and check for clicks on project-card divs.
-document.addEventListener('click', event => {
-    //project-card div click
+function check_for_project_card_click(event) {
     if (event.target.closest('.project-card')) {
         project_card_click(event.target.closest('.project-card'));
+    }
+}
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 700) {
+        let project_cards = document.getElementsByClassName('project-card');
+        for(let i = 0; i < project_cards.length; i++) {
+            let description = project_cards[i].querySelector('.project-description');
+            let button = project_cards[i].querySelector('.button');
+            description.style.display = 'none';
+            button.style.display = 'none';
+        }
+        document.addEventListener('click', check_for_project_card_click);
+    }
+    else {
+        let project_cards = document.getElementsByClassName('project-card');
+        for(let i = 0; i < project_cards.length; i++) {
+            let description = project_cards[i].querySelector('.project-description');
+            let button = project_cards[i].querySelector('.button');
+            description.style.display = 'block';
+            button.style.display = 'flex';
+        }
+        document.removeEventListener('click', check_for_project_card_click);
     }
 });
